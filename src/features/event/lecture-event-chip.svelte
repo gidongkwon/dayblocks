@@ -1,20 +1,18 @@
 <script lang="ts">
-  import type { UniversityLectureEvent } from ".";
+  import type { UniversityLectureEvent } from '.';
 
   export let lecture: UniversityLectureEvent;
   const hourHeight = 40;
-
-  console.log(lecture);
 </script>
 
 <div
-  class='chip'
+  class="chip"
   style:top={`${(lecture.startHour - 4) * hourHeight}px`}
   style:height={`calc(${(lecture.endHour - lecture.startHour) * hourHeight}px - 1.6rem - 1px)`}
 >
-  <span class='name'>{lecture.name}</span>
-  <span class='place'>{lecture.place}</span>
-  <span class='description'>{lecture.description}</span>
+  <span class="name">{lecture.name}</span>
+  <span class="place">{lecture.place}</span>
+  <span class="description">{lecture.description}</span>
 </div>
 
 <style>
