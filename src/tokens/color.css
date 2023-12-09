@@ -183,4 +183,14 @@
   --element-background-active: var(--primary-5);
   --element-border-hover: var(--primary-8);
   --element-focusring: var(--primary-7);
+  
+  --background: var(--slate-1);
+  --elevation-1: white;
+  --elevation-2: var(--slate-2);
+}
+
+.dark {
+  --background: var(--slate-1);
+  --elevation-1: var(--slate-2);
+  --elevation-2: var(--slate-3);
 }

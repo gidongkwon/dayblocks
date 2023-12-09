@@ -7,7 +7,7 @@
 
 <div
   class="chip"
-  style:top={`${(lecture.startHour - 4) * hourHeight}px`}
+  style:top={`${(lecture.startHour - 8) * hourHeight}px`}
   style:height={`calc(${(lecture.endHour - lecture.startHour) * hourHeight}px - 1.6rem - 1px)`}
 >
   <span class="name">{lecture.name}</span>
@@ -18,7 +18,7 @@
 <style>
   .chip {
     position: absolute;
-    width: calc(100% - 1.6rem);
+    width: calc(100% - 1.6rem - 2px);
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
